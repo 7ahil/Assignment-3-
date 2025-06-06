@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./a3product.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik Lines:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display SC:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@200;300;400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="product-page">
+    		<div class="rectangle-parent">
+      			<div class="frame-child">
+      			</div>
+      			<img class="frame-icon" alt="" src="Frame.svg">
+      			
+      			<img class="frame-icon1" alt="" src="Frame1.svg" id="frameIcon">
+      			
+      			<img class="frame-icon2" alt="" src="Frame2.svg" id="frameIcon1">
+      			
+      			<div class="five-lanes-container">FIVE LANE
+        				<span class="s">S</span>
+      			</div>
+      			<div class="frame-item" id="frame1">
+      			</div>
+    		</div>
+    		<div class="mens-jackets">MEN’S  JACKETS </div>
+    		<img class="frame-icon3" alt="" src="Frame3.svg">
+    		
+    		<img class="frame-icon4" alt="" src="Frame4.svg">
+    		
+    		<img class="fivelanes-178-540x-1-icon" alt="" src="image5.png">
+    		
+    		<img class="fivelanes-201-540x-1-icon" alt="" src="image6.png">
+    		
+    		<img class="fivelanes-156-540x-1-icon" alt="" src="image7.png">
+    		
+    		<img class="fivelanes-150-540x-1-icon" alt="" src="image8.png">
+    		
+    		<img class="fivelanes-086-540x-1-icon" alt="" src="image9.png">
+    		
+    		<img class="fivelanes-137-540x-1-icon" alt="" src="image10.png">
+    		
+    		<img class="fivelanes-069-540x-3-icon" alt="" src="image11.png">
+    		
+    		<img class="fivelanes-106-540x-1-icon" alt="" src="image12.png">
+    		
+    		<img class="fivelanes-050-540x-1-icon" alt="" src="image13.png">
+    		
+    		<img class="fivelanes-216-540x-1-icon" alt="" src="image14.png">
+    		
+    		<div class="marshall-i-370-container">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container1">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container2">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container3">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container4">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container5">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container6">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container7">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container8">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="marshall-i-370-container9">
+      			<p class="marshall-i">MARSHALL I </p>
+      			<p class="p">$370</p>
+    		</div>
+    		<div class="rectangle-group">
+      			<div class="frame-inner">
+      			</div>
+      			<div class="five-lanes">© 2025,
+        				<a class="five-lanes1" href="https://fivelanes.com.au/" target="_blank">
+          					<span class="five-lanes2">Five Lanes</span>
+        				</a>.
+      			</div>
+    		</div>
+    		<div class="product-page-child" id="frame2">
+    		</div>
+  	</div>
+  	
+  	<div id="frameContainer" class="popup-overlay" style="display:none">
+    		
+    		<div class="vector-parent" id="popupframeContainer">
+      			<img class="vector-icon" alt="" src="Vector.svg">
+      			
+      			<div class="search-here">search here</div>
+    		</div>
+    		
+    		
+  	</div>
+  	
+  	
+  	
+  	<script>
+    		var popupframeContainer = document.getElementById("popupframeContainer");
+    		if(popupframeContainer) {
+      			popupframeContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frameIcon = document.getElementById("frameIcon");
+    		if(frameIcon) {
+      			frameIcon.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frameIcon1 = document.getElementById("frameIcon1");
+    		if(frameIcon1) {
+      			frameIcon1.addEventListener("click", function () {
+        				var popup = document.getElementById("frameContainer");
+        				if(!popup) return;
+        				var popupStyle = popup.style;
+        				if(popupStyle) {
+          					popupStyle.display = "flex";
+          					popupStyle.zIndex = 100;
+          					popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+          					popupStyle.alignItems = "flex-start";
+          					popupStyle.justifyContent = "flex-end";
+        				}
+        				popup.setAttribute("closable", "");
+        				
+        				var onClick = popup.onClick || function(e) {
+          					if(e.target === popup && popup.hasAttribute("closable")) {
+            						popupStyle.display = "none";
+          					}
+        				};
+        				popup.addEventListener("click", onClick);
+      			});
+    		}
+    		
+    		var frame1 = document.getElementById("frame1");
+    		if(frame1) {
+      			frame1.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frame2 = document.getElementById("frame2");
+    		if(frame2) {
+      			frame2.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
+</html>
