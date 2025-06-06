@@ -1,0 +1,391 @@
+.frame-child {
+  	position: absolute;
+  	top: -0.5px;
+  	left: -0.5px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	background-color: rgba(78, 59, 49, 0.75);
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 1441px;
+  	height: 100px;
+}
+.frame-icon {
+  	position: absolute;
+  	top: 27px;
+  	left: 32px;
+  	width: 54px;
+  	height: 46px;
+  	overflow: hidden;
+}
+.frame-icon1 {
+  	position: absolute;
+  	top: 35px;
+  	left: 1346px;
+  	width: 43px;
+  	height: 38px;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+.frame-icon2 {
+  	position: absolute;
+  	top: 39px;
+  	left: 1274px;
+  	width: 35px;
+  	height: 34px;
+  	overflow: hidden;
+}
+.s {
+  	letter-spacing: 0.01em;
+}
+.five-lanes-container {
+  	position: absolute;
+  	top: 16px;
+  	left: 536px;
+  	display: inline-block;
+  	width: 521px;
+  	height: 99px;
+}
+.frame-item {
+  	position: absolute;
+  	top: 22px;
+  	left: 544px;
+  	width: 377px;
+  	height: 68px;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 1px;
+  	background-color: #683f24;
+  	border: 1px solid #d6c6b8;
+  	box-sizing: border-box;
+  	width: 1439px;
+  	height: 99px;
+  	overflow: hidden;
+  	font-size: 64px;
+  	color: #fefefe;
+  	font-family: 'Rubik Lines';
+}
+.desktop-2-child {
+  	position: absolute;
+  	top: 621px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-item {
+  	position: absolute;
+  	top: 1204px;
+  	left: 687px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-inner {
+  	position: absolute;
+  	top: 1204px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.expiry-date-cvc {
+  	position: absolute;
+  	top: 1223px;
+  	left: 79px;
+  	font-weight: 200;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 911px;
+  	height: 77px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 1098px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-child1 {
+  	position: absolute;
+  	top: 858px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-child2 {
+  	position: absolute;
+  	top: 741px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-child3 {
+  	position: absolute;
+  	top: 618px;
+  	left: 684px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.rectangle-icon {
+  	position: absolute;
+  	top: 501px;
+  	left: 41px;
+  	border-radius: 10px;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-child4 {
+  	position: absolute;
+  	top: 261px;
+  	left: 683px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.desktop-2-child5 {
+  	position: absolute;
+  	top: 261px;
+  	left: 41px;
+  	border-radius: 10px;
+  	background-color: #d6c6b8;
+  	width: 609px;
+  	height: 89px;
+}
+.express-checkout {
+  	position: absolute;
+  	top: 184px;
+  	left: 79px;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.or {
+  	position: absolute;
+  	top: 381px;
+  	left: 79px;
+  	display: inline-block;
+  	width: 91px;
+  	height: 77px;
+}
+.email {
+  	position: absolute;
+  	top: 521px;
+  	left: 58px;
+  	font-weight: 200;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.first-name-last {
+  	position: absolute;
+  	top: 640px;
+  	left: 58px;
+  	font-weight: 200;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 975px;
+  	height: 77px;
+}
+.address {
+  	position: absolute;
+  	top: 764px;
+  	left: 58px;
+  	font-weight: 200;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.frame-icon3 {
+  	position: absolute;
+  	top: 773px;
+  	left: 570px;
+  	width: 35px;
+  	height: 34px;
+  	overflow: hidden;
+}
+.phone-optional {
+  	position: absolute;
+  	top: 876px;
+  	left: 58px;
+  	font-weight: 200;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.card-details {
+  	position: absolute;
+  	top: 1032px;
+  	left: 58px;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.card-number {
+  	position: absolute;
+  	top: 1118px;
+  	left: 58px;
+  	font-weight: 200;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.desktop-2-child6 {
+  	position: absolute;
+  	top: 1347px;
+  	left: 106px;
+  	border-radius: 10px;
+  	background-color: #683f24;
+  	width: 1162px;
+  	height: 89px;
+}
+.pay-now {
+  	position: absolute;
+  	top: 1366px;
+  	left: 570px;
+  	font-family: 'Playfair Display';
+  	color: #fefefe;
+  	display: inline-block;
+  	width: 609px;
+  	height: 77px;
+}
+.frame-inner {
+  	position: absolute;
+  	top: 31px;
+  	left: 0px;
+  	background-color: #683f24;
+  	width: 1440px;
+  	height: 225px;
+}
+.five-lanes2 {
+  	text-decoration: underline;
+}
+.five-lanes1 {
+  	color: inherit;
+}
+.five-lanes {
+  	position: absolute;
+  	top: 113px;
+  	left: 462px;
+  	display: inline-block;
+  	width: 739px;
+  	height: 75px;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 1516px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 1440px;
+  	height: 225px;
+  	overflow: hidden;
+  	font-size: 48px;
+  	color: #fff;
+  	font-family: 'Rubik Lines';
+}
+.frame-div {
+  	position: absolute;
+  	top: 498px;
+  	left: 49px;
+  	width: 601px;
+  	height: 92px;
+  	overflow: hidden;
+}
+.desktop-2 {
+  	width: 100%;
+  	position: relative;
+  	background-color: #f3eee6;
+  	height: 1740px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 40px;
+  	color: #1e1e1e;
+  	font-family: 'Work Sans';
+}
+
+
+.thanks-for-order {
+  	position: absolute;
+  	top: 289px;
+  	left: 218px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 1132px;
+  	height: 312px;
+}
+.frame-icon4 {
+  	position: absolute;
+  	top: 50px;
+  	left: 1249px;
+  	width: 137px;
+  	height: 132px;
+  	overflow: hidden;
+}
+.desktop-3 {
+  	width: 1440px;
+  	position: relative;
+  	background-color: #f3eee6;
+  	height: 1024px;
+  	overflow: hidden;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 128px;
+  	color: #000;
+  	font-family: 'Playfair Display';
+}
+
+
+.vector-icon {
+  	position: absolute;
+  	height: 51.55%;
+  	width: 3.47%;
+  	top: 27.84%;
+  	right: 4.38%;
+  	bottom: 20.62%;
+  	left: 92.15%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.search-here {
+  	position: absolute;
+  	height: 52.58%;
+  	width: 31.32%;
+  	top: 21.65%;
+  	left: 1.94%;
+  	font-weight: 200;
+  	display: inline-block;
+}
+.vector-parent {
+  	width: 1440px;
+  	position: relative;
+  	background-color: #d6c6b8;
+  	height: 97px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	max-width: 90%;
+  	max-height: 90%;
+  	text-align: left;
+  	font-size: 64px;
+  	color: #000;
+  	font-family: 'Work Sans';
+}
+
