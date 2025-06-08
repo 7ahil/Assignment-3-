@@ -31,6 +31,7 @@
 	display: flex;
 	text-align: center;
 	padding: 10px ;
+	 text-decoration: none;
 }
 
 .des {
@@ -38,8 +39,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  color: black;
 }
 
 .product-name, .product-price {
   margin: 0;
+}
+
+.pro a{
+	text-decoration:none ;
 }

@@ -20,8 +20,8 @@
 
 				<div>
 						<ul id = "navbar">
-							<li><a href = "a3search.html"><img src = "Frame1.svg" class = "search"></a> </li>
-							<li><a href = "a3cart.html"><img src = "Frame2.svg" class = "cart"></a> </li>
+							<li><a href = "a3cart.html"><img src = "Frame1.svg" class = "search"></a> </li>
+							<li><a href = "a3search.html"><img src = "Frame2.svg" class = "cart"></a> </li>
 					</ul>
 				</div>
 </section>
@@ -62,7 +62,7 @@
 			<option>XL</option>
 		</select>
 		<input type="number" value="1">
-		<button class ="cta-button">ADD TO CART</button>
+		<button class="cta-button" onclick="addToCart('marshal1', 780, 'image16.png')">ADD TO CART</button>
 		<h3> Product Details</h3>
 		<span>This statement maker, black pure leather jacket is made   using lamb skin shell, is protected with silk satin lining and is equipped with a silver zipper. Available in two colours.
         <ul>
@@ -74,7 +74,10 @@
 </ul>
 </span>
 
-<button class = "cta-button">BACK</button>
+<a href="a3product.html">
+  <button class="cta-button">BACK</button>
+</a>
+
 	 </div>
 </section>
 
@@ -121,15 +124,145 @@ const products = {
         price: "$540",
         mainImage: "image16.png",
         images: ["image17.png", "image18.png", "image19.png", "image16.png"],
-        description: "This statement maker, black pure leather jacket..."
+        description: `Slim Fit
+
+This statement maker, black pure leather jacket is made   using lamb skin shell, is protected with silk satin lining and is equipped with a silver zipper. Available in two colours.
+
+Premium Lamb Skin Shell
+Shiny Silver Accessories
+Silk Satin Lining
+Zip Side Pockets
+Nehru Collar
+ This design is also available in Brown Colour.
+
+Please Note: This jacket is designed to be a SLIM FIT. We strongly recommend to buy one size up from your usual size. 
+
+Free Shipping and Free size exchange. For sizing guide, please click here.`
     },
+
+
     "madmax": {
         name: "Mad Max",
         price: "$1200",
-        mainImage: "image20.png",
-        images: ["image21.png", "image22.png", "image23.png", "image20.png"],
-        description: "Description for Mad Max jacket..."
-    }
+        mainImage: "image30.png",
+        images: ["image31.png", "image32.png", "image33.png", "image30.png"],
+        description:`Slim Fit
+
+Design with armour styled ribbed leather jacket and crafted with premium lamb skin shell, makes this jacket a favourite for the ambitious fashion lovers. This Mad Max jacket is equipped with shiny silver accessories, zipped pockets and lapel collars.
+
+Premium Lamb Skin Shell
+Shiny Silver accessories
+Silk Satin Lining
+Lapel Collar
+Ribbed Shoulders & Forearms
+Zip Pockets
+Please Note: This jacket is designed to be a SLIM FIT. We strongly recommend to buy one size up from your usual size.`
+    },
+
+	 "archillies": {
+        name: "ARCHILLIES",
+        price: "$290",
+        mainImage: "image34.png",
+        images: ["image35.png", "image36.png", "image37.png", "image34.png"],
+        description:`Slim Fit
+
+Simple, elegant and classy is what defines this jacket. It is uniquely crafted with premium lamb skin shell, decorated with shiny silver accessories and a silk satin lining that provides an element of comfort. 
+
+Premium Lamb Skin Shell
+Shiny Silver Accessory
+Silk Satin Lining
+Nehru Collar
+Zip Pockets
+ This design is also available in Brown Suede Colour.
+
+Please Note: This jacket is designed to be a SLIM FIT.
+ `
+    },
+
+	 "romus": {
+        name: "ROMUS",
+        price: "$459",
+        mainImage: "image38.png",
+        images: ["image39.png", "image40.png", "image41.png", "image38.png"],
+        description:`Slim Fit
+
+"More talented than Mr Ripley!". While you are busy making some smart moves in your life, this pure leather jacket made from lamb skin shell will surely be your sidekick.
+
+Premium Lamb Skin Shell
+Shiny Silver accessories
+Silk Satin Lining
+Side Zip Pockets
+Nehru Collar
+`
+    },
+
+	 "tyler": {
+        name: "TYLER",
+        price: "$786",
+        mainImage: "image42.png",
+        images: ["image43.png", "image44.png", "image45.png", "image42.png"],
+        description:`Slim Fit
+
+An elegant yet enigmatic pure leather made from premium lamb skin shell, is equipped with a shiny silver zip and pullers with perfectly comfortable pockets. Let this jacket turn you into an icon and trend setter. 
+
+Premium Lamb Skin Shell
+Shiny Silver Accessories
+Silk Satin Inner lining
+Soft Edged Side Pockets
+Nehru Collar
+ This design is also available in Blue Colour.
+
+Clearance Sale: No refunds or exchanges on this product.
+`
+    },
+
+
+	
+	 "connus": {
+        name: "CONNUS",
+        price: "$780",
+        mainImage: "image46.png",
+        images: ["image47.png", "image48.png", "image49.png", "image46.png"],
+        description:`Slim Fit
+
+Be a leader of the pack with this top quality black leather jacket with prestige design and stylish cuts. This jacket is made from premium lamb skin shell using shiny silver accessories. Zip arms and pockets offer versatility. 
+
+Premium Lamb Skin Shell
+Shiny Silver accessories
+`
+    },
+
+	 "romads": {
+        name: "ROMADS",
+        price: "$689",
+        mainImage: "image50.png",
+        images: ["image51.png", "image52.png", "image53.png", "image50.png"],
+        description:`Slim Fit
+
+A sleek touch with soft collars and silver accessories, makes this jacket a perfect combination for on trend daily life. 
+
+Premium Lamb Skin Shell
+Shiny Silver Accessories
+Silk Satin Lining
+Side Pockets
+Soft Elastic Collar
+Clearance Sale: No refunds or exchanges on this product.
+`
+    },
+
+	 "hailus": {
+        name: "HAILUS",
+        price: "$689",
+        mainImage: "image54.png",
+        images: ["image55.png", "image56.png", "image57.png", "image54.png"],
+        description:`This is your biker jacket! This jacket, available in brown, is crafted using hand selected premium lamb skin shell and stitched with shiny silver top notch accessories. 
+
+Premium Lamb Skin Shell
+Shiny Silver accessories
+
+`
+    },
+
     // Add other products
 };
 
@@ -150,6 +283,75 @@ if (products[productId]) {
     });
 }
 </script>
+
+
+<script>
+// Cart functionality
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function addToCart(name, price, image) {
+    // Check if product already in cart
+    const existingItem = cart.find(item => item.name === name);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+    }
+    
+    // Save to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    // Show confirmation
+    alert(`${name} added to cart!`);
+    
+    // Update cart counter
+    updateCartCounter();
+}
+
+function updateCartCounter() {
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    // Update counter if it exists on this page
+    const counter = document.getElementById('cart-counter');
+    if (counter) {
+        counter.textContent = totalItems;
+    }
+}
+
+// Initialize cart counter if on this page
+if (document.getElementById('cart-counter')) {
+    document.addEventListener('DOMContentLoaded', updateCartCounter);
+}
+</script>
+
+
+<script>
+// Get product details from URL
+const urlParams = new URLSearchParams(window.location.search);
+const productName = urlParams.get('name');
+const productPrice = urlParams.get('price');
+const productImage = urlParams.get('image');
+
+// Update page with product details
+if (productName) {
+    document.querySelector('.pro-dtls h2').textContent = productName;
+    document.querySelector('.pro-dtls h3').textContent = `$${productPrice}`;
+    document.getElementById('main-image').src = productImage;
+    
+    // Update add to cart button
+    const addToCartBtn = document.querySelector('.cta-button');
+    addToCartBtn.onclick = function() {
+        addToCart(productName, productPrice, productImage);
+    };
+}
+</script>
+<!-- Add this to all pages before </body> -->
+<script src="global.js"></script>
 
 </body>
 </html>

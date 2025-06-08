@@ -1,18 +1,112 @@
-
-#cart table{
-	width: 100%;
-	border-collapse: collapse;
-	table-layout: fixed;
-	white-space: nowrap;
+/* Cart table styles */
+#cart table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
 }
 
-#cart table img{
-	width: 70%;
+#cart table thead {
+    border-bottom: 1px solid #ddd;
 }
 
-#cart table thead{
-	border: 1px solid #f3eee6;
-	border-right: none;
-	border-left: none;
+#cart table th, #cart table td {
+    padding: 12px 15px;
+    text-align: left;
 }
 
+#cart table img {
+    width: 70px;
+    height: auto;
+}
+
+#cart table input[type="number"] {
+    width: 60px;
+    padding: 8px;
+}
+
+#cart table button {
+    background: none;
+    border: none;
+    color: #ff0000;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#cart tfoot {
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+}
+
+
+/* Checkout Section Styles */
+#cart-totals {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+#cart-totals table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#cart-totals td {
+    padding: 10px 0;
+}
+
+#checkout-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Checkout Form Styles */
+#checkout-form {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group-row > div {
+    flex: 1;
+}
+
+/* Order Confirmation Styles */
+#order-confirmation {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#order-confirmation h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}

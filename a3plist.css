@@ -47,3 +47,19 @@
 	font-size: large;
 	line-height: 25px;
 }
+
+/* Make product links behave correctly */
+.product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+/* Add hover effect to show clickability */
+.pro:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
