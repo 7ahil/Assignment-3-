@@ -43,3 +43,146 @@
   display: block;
 }
 
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Header adjustments */
+  #header {
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .five-lanes-container, #footer {
+    font-size: 32px;
+  }
+  
+  #navbar li {
+    padding: 0 10px;
+  }
+  
+  /* Hero image */
+  .banner, .antibanner {
+    height: auto;
+    max-height: 50vh;
+  }
+  
+  /* Text sections */
+  .center-text {
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Men/Women sections */
+  .mens {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .mens:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  
+  .side-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .text-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Antihero section */
+  #antihero {
+    height: auto;
+  }
+}
+
+/* iPhone 12 Pro specific (390px width) */
+@media only screen and (max-width: 390px) {
+  #header {
+    height: 60px;
+  }
+  
+  .five-lanes-container {
+    font-size: 28px;
+  }
+  
+  #navbar img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile Responsive Additions - Add to end of a3home.css */
+
+@media only screen and (max-width: 768px) {
+  .mens {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+  
+  .mens:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .side-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .text-content {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .banner {
+    height: auto;
+    max-height: 50vh;
+  }
+  
+  #antihero {
+    height: auto;
+  }
+  
+  .antibanner {
+    height: auto;
+    max-height: 50vh;
+  }
+}
+
+/* iPhone 12 Pro Specific */
+@media only screen and (max-width: 390px) {
+  .mens {
+    padding: 25px 15px;
+    gap: 20px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}

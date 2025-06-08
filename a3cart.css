@@ -110,3 +110,127 @@
     color: #4CAF50;
     margin-bottom: 20px;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    /* Alternative mobile-friendly cart layout */
+    #cart table {
+        display: none; /* Hide table on mobile */
+    }
+    
+    /* Mobile cart items as cards */
+    .mobile-cart-item {
+        display: block;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .mobile-cart-item img {
+        width: 80px;
+        height: auto;
+        float: left;
+        margin-right: 15px;
+        border-radius: 4px;
+    }
+    
+    .mobile-item-details {
+        overflow: hidden;
+    }
+    
+    .mobile-item-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+    
+    .mobile-item-price {
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .mobile-item-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+    }
+    
+    .mobile-quantity-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .mobile-quantity-controls button {
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .mobile-quantity-controls input {
+        width: 50px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    .mobile-remove-btn {
+        background: #ff4444;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+    
+    .mobile-subtotal {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #333;
+    }
+    
+    /* Adjust other sections for mobile */
+    #cart-totals {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    #checkout-form {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .form-group-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #order-confirmation {
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+    
+    /* Adjust section headings */
+    #cart h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    #cart-totals h2,
+    #checkout-form h2,
+    #order-confirmation h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+}

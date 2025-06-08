@@ -49,3 +49,96 @@
 .pro a{
 	text-decoration:none ;
 }
+
+/* Mobile Responsive Additions - Add to end of a3product.css */
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  #product .pro {
+    flex: 0 0 calc(33.33% - 20px); /* 3 products per row on tablet */
+  }
+  
+  #product h1 {
+    font-size: 48px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  #product .pro-container {
+    gap: 15px;
+    padding-top: 20px;
+  }
+  
+  #product .pro {
+    flex: 0 0 calc(50% - 15px); /* 2 products per row on mobile */
+    padding: 8px 10px;
+  }
+  
+  #product h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .des {
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+/* iPhone 12 Pro and smaller */
+@media only screen and (max-width: 390px) {
+  .p1 {
+    padding: 20px 15px; /* Reduce side padding */
+  }
+  
+  #product .pro-container {
+    gap: 12px;
+  }
+  
+  #product .pro {
+    flex: 0 0 calc(50% - 12px);
+    padding: 6px 8px;
+  }
+  
+  #product h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+  }
+  
+  .product-price {
+    font-size: 15px;
+  }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 320px) {
+  #product .pro {
+    flex: 0 0 100%; /* Single column on very small screens */
+    margin-bottom: 15px;
+  }
+  
+  #product .pro-container {
+    gap: 10px;
+  }
+  
+  .des {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

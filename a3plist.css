@@ -63,3 +63,179 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
 }
+
+/* Mobile Responsive Additions - Add to end of a3plist.css */
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  #pro-details {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  #pro-details .pro-image {
+    width: 100%;
+    margin-right: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #pro-details .pro-dtls {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  #pro-details {
+    margin-top: 15px;
+    gap: 25px;
+  }
+  
+  #pro-details .pro-image {
+    max-width: 400px;
+  }
+  
+  .small-img-grp {
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .small-img-col {
+    flex-basis: 22%;
+  }
+  
+  #pro-details .pro-dtls {
+    padding-top: 15px;
+  }
+  
+  #pro-details .pro-dtls h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  #pro-details .pro-dtls h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  #pro-details .pro-dtls select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #c7b392;
+    border-radius: 8px;
+  }
+  
+  #pro-details .pro-dtls input {
+    width: 80px;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-right: 15px;
+    border: 1px solid #c7b392;
+    border-radius: 8px;
+  }
+  
+  .cta-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  #pro-details .pro-dtls span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  #pro-details .pro-dtls ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  #pro-details .pro-dtls li {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+
+/* iPhone 12 Pro and smaller */
+@media only screen and (max-width: 390px) {
+  .p1 {
+    padding: 20px 15px;
+  }
+  
+  #pro-details {
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  #pro-details .pro-image {
+    max-width: 100%;
+  }
+  
+  .small-img-grp {
+    gap: 8px;
+  }
+  
+  .small-img-col {
+    flex-basis: 23%;
+  }
+  
+  #pro-details .pro-dtls h2 {
+    font-size: 28px;
+  }
+  
+  #pro-details .pro-dtls h3 {
+    font-size: 22px;
+  }
+  
+  #pro-details .pro-dtls select {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  
+  #pro-details .pro-dtls input {
+    width: 70px;
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .cta-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  #pro-details .pro-dtls span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  #pro-details .pro-dtls li {
+    font-size: 14px;
+  }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 320px) {
+  .small-img-col {
+    flex-basis: 22%;
+  }
+  
+  #pro-details .pro-dtls h2 {
+    font-size: 24px;
+  }
+  
+  #pro-details .pro-dtls h3 {
+    font-size: 20px;
+  }
+  
+  #pro-details .pro-dtls input {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}

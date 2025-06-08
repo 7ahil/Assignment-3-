@@ -6,8 +6,6 @@ html, body {
   box-sizing: border-box;
 }
 
-
-
 #header{
 	height: 100px;
 	display: flex;
@@ -37,13 +35,21 @@ html, body {
 	color: #fefefe;
 }
 
+/* Make sure icons have proper sizing */
+#navbar img.cart,
+#navbar img.search {
+	width: 24px;
+	height: 24px;
+	display: block;
+}
+
 .five-lanes-container {
   font-size: 60px;
   font-family: 'Rubik Lines';
   text-decoration: none;
   color: #fefefe;
+  flex-shrink: 0; /* Prevent logo from shrinking */
 }
-
 
 .center-text {
   text-align: center;
@@ -72,7 +78,6 @@ body{
 	padding: 40px 80px;
 }
 
-
 #footer{
 	display: flex;
 	height: 100px;
@@ -96,11 +101,245 @@ body{
   font-size: 32px;
   cursor: pointer;
   margin-top: 40px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .cta-button:hover {
   background-color: #4e3b31; /* lighter on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Add these to your global.css */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Touch targets for mobile */
+a, button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Prevent text overflow */
+p, h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
+/* Mobile Responsive Additions */
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  #header {
+    padding: 0 40px;
+  }
+  
+  .five-lanes-container {
+    font-size: 48px;
+  }
+  
+  #navbar li {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  #header {
+    height: 70px;
+    padding: 0 20px;
+  }
+  
+  .five-lanes-container {
+    font-size: 28px; /* Smaller to fit better */
+  }
+  
+  /* Keep navbar visible but optimize spacing */
+  #navbar {
+    display: flex; /* Override the display: none */
+  }
+  
+  #navbar li {
+    padding: 0 8px; /* Reduce padding between icons */
+  }
+  
+  /* Ensure icons are properly sized and clickable */
+  #navbar img.cart,
+  #navbar img.search {
+    width: 20px;
+    height: 20px;
+    padding: 8px; /* Add padding for better touch targets */
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  #navbar img.cart:hover,
+  #navbar img.search:hover {
+    background: rgba(255,255,255,0.2);
+  }
+  
+  .center-text {
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  /* Responsive button styles */
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin-top: 25px;
+    width: auto;
+    min-width: 120px;
+  }
+  
+  .p1 {
+    padding: 20px 20px;
+  }
+  
+  #footer {
+    height: 60px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 480px) {
+  #header {
+    height: 60px;
+    padding: 0 15px;
+  }
+  
+  .five-lanes-container {
+    font-size: 22px;
+  }
+  
+  #navbar li {
+    padding: 0 5px;
+  }
+  
+  #navbar img.cart,
+  #navbar img.search {
+    width: 18px;
+    height: 18px;
+    padding: 6px;
+  }
+  
+  /* More compact buttons for small screens */
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    min-width: 100px;
+    border-radius: 6px;
+  }
+}
+
+/* iPhone 12 Pro and similar */
+@media only screen and (max-width: 390px) {
+  .five-lanes-container {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  .center-text {
+    padding: 0 15px;
+  }
+  
+  /* Smaller buttons for iPhone sizes */
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 15px;
+    min-width: 90px;
+    border-radius: 5px;
+  }
+  
+  #footer {
+    font-size: 16px;
+    height: 50px;
+  }
+  
+  .p1 {
+    padding: 15px 15px;
+  }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 320px) {
+  #header {
+    padding: 0 10px;
+  }
+  
+  .five-lanes-container {
+    font-size: 18px;
+  }
+  
+  #navbar li {
+    padding: 0 3px;
+  }
+  
+  #navbar img.cart,
+  #navbar img.search {
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+  }
+  
+  /* Very compact buttons for tiny screens */
+  .cta-button {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-top: 12px;
+    min-width: 80px;
+    border-radius: 4px;
+  }
+}
+
+/* Additional button-specific responsive rules */
+@media only screen and (max-width: 768px) {
+  /* Full-width buttons on mobile when appropriate */
+  .cta-button.full-width-mobile {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Center buttons on mobile */
+  .cta-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Tablet-specific button adjustments */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cta-button {
+    padding: 16px 32px;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
