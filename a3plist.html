@@ -16,7 +16,7 @@
 <body>
   	
 <section id = "header">
-					<a href = "a3home.html" class = "five-lanes-container"> Fivelanes</a>
+					<a href = "index.html" class = "five-lanes-container"> Fivelanes</a>
 
 				<div>
 						<ul id = "navbar">
@@ -106,6 +106,50 @@
 						mainimage.src = smallimg[3].src;
 						}
 				</script>
+
+				<!-- product-detail.html -->
+<!-- Keep your existing product list page structure -->
+<script>
+// Get product ID from URL
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get('product');
+
+// Product data (could also come from an API)
+const products = {
+    "marshal": {
+        name: "Marshal",
+        price: "$540",
+        mainImage: "image16.png",
+        images: ["image17.png", "image18.png", "image19.png", "image16.png"],
+        description: "This statement maker, black pure leather jacket..."
+    },
+    "madmax": {
+        name: "Mad Max",
+        price: "$1200",
+        mainImage: "image20.png",
+        images: ["image21.png", "image22.png", "image23.png", "image20.png"],
+        description: "Description for Mad Max jacket..."
+    }
+    // Add other products
+};
+
+// Update page with product data
+if (products[productId]) {
+    const product = products[productId];
+    document.querySelector('h2').textContent = product.name;
+    document.querySelector('.pro-dtls h3').textContent = product.price;
+    document.getElementById('main-image').src = product.mainImage;
+    document.querySelector('.pro-dtls span').textContent = product.description;
+    
+    // Update small images
+    const smallImages = document.querySelectorAll('.small-img');
+    product.images.forEach((img, index) => {
+        if (smallImages[index]) {
+            smallImages[index].src = img;
+        }
+    });
+}
+</script>
 
 </body>
 </html>
