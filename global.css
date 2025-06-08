@@ -1,0 +1,106 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
+}
+
+
+
+#header{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1px 80px;
+	background-color: #4e3b31;
+	color: #fefefe;
+  	font-family: 'Rubik Lines';
+	font-size: 60px;
+	box-shadow: #d6c6b8;
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#navbar li {
+	 list-style:none ;
+	 padding: 0px 20px;
+}
+
+#navbar li a {
+	text-decoration: none;
+	color: #fefefe;
+}
+
+.five-lanes-container {
+  font-size: 60px;
+  font-family: 'Rubik Lines';
+  text-decoration: none;
+  color: #fefefe;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+h1{
+	 font-family: 'Playfair Display SC';
+	 font-size: 64px;
+}
+
+h2{font-family: 'Work Sans';
+	font-size: 32px;
+}
+h3{font-family: 'Work Sans';
+	font-size: 24px;
+	font-weight: 300;
+}
+
+body{
+	background-color: #f3eee6;
+	 margin: 0;
+     padding: 0;
+}
+
+.p1{
+	padding: 40px 80px;
+}
+
+
+#footer{
+	display: flex;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	padding: 1px 80px;
+	background-color: #4e3b31;
+	color: #fefefe;
+  	font-family: 'Rubik Lines';
+	font-size: 60px;
+}
+
+.cta-button {
+  width: fit-content;
+  padding: 20px 40px;
+  background-color: #683f24; /* your brand color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Play Fair Display SC';
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #4e3b31; /* lighter on hover */
+}
+
